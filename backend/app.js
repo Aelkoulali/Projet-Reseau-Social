@@ -25,7 +25,7 @@ db.sequelize.sync().then(() => {
   console.log("Drop and Resync Database");
 });
 
-require("./_database/admin");
+require("./config/admin");
 
 // Parsing
 app.use(express.json());
